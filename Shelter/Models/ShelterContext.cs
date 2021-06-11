@@ -19,11 +19,11 @@ namespace Shelter.Models
               new Animal { AnimalId = 9, Name = "Lady", Age = 1, Type="dog", Sex = "Female", Available = false },
               new Animal { AnimalId = 10, Name = "Nymeria", Age = 1, Type="dog", Sex = "Female", Available = true },
               new Animal { AnimalId = 11, Name = "Summer", Age = 1, Type="dog", Sex = "Male", Available = false },
-              new Animal { AnimalId = 12, Name = "Shaggy Dog", Age = 1, Type="dog", Sex = "Male", Available = false },
+              new Animal { AnimalId = 12, Name = "Shaggy Dog", Age = 1, Type="dog", Sex = "Male", Available = false }
               
           );
     }
-    public CretaceousParkContext(DbContextOptions<CretaceousParkContext> options)
+    public ShelterContext(DbContextOptions<ShelterContext> options)
       : base(options)
     {
     }
