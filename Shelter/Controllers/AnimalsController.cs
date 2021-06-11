@@ -29,7 +29,7 @@ namespace Shelter.Controllers
 
       if (name != null)
       {
-        query = query.Where(entry => entry.Names == names);
+        query = query.Where(entry => entry.Name == name);
       }
       if (age != null)
       {
