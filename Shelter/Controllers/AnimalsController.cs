@@ -43,6 +43,10 @@ namespace Shelter.Controllers
       {
         query = query.Where(entry => entry.Sex == sex);
       }
+      // if (available != null)
+      // {
+      //   query = query.Where(entry => entry.Available == available);
+      // }
 
       return await query.ToListAsync();
     }
