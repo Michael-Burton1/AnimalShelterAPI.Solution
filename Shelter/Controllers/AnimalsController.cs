@@ -23,7 +23,7 @@ namespace Shelter.Controllers
 
     // GET api/animals
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Animal>>> Get(string name, int age, string type, string sex, bool available)
+    public async Task<ActionResult<IEnumerable<Animal>>> Get(string name, string type, string sex)
     {
       var query = _db.Animals.AsQueryable();
 
@@ -31,10 +31,10 @@ namespace Shelter.Controllers
       {
         query = query.Where(entry => entry.Name == name);
       }
-      if (age != null)
-      {
-        query = query.Where(entry => entry.Age == age);
-      }
+      // if (age != null)
+      // {
+      //   query = query.Where(entry => entry.Age == age);
+      // }
       if (type != null)
       {
         query = query.Where(entry => entry.Type == type);
@@ -43,10 +43,10 @@ namespace Shelter.Controllers
       {
         query = query.Where(entry => entry.Sex == sex);
       }
-      if (available != null)
-      {
-        query = query.Where(entry => entry.Available == available);
-      }
+      // if (available != null)
+      // {
+      //   query = query.Where(entry => entry.Available == available);
+      // }
 
       return await query.ToListAsync();
     }
