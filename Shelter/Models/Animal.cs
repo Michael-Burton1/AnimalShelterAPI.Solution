@@ -13,5 +13,7 @@ namespace Shelter.Models
     public string Type {get; set;}
     [Required]
     public string Sex {get; set;}
+    [Required]
+    public bool Availible {get; set;}
   }
 }
