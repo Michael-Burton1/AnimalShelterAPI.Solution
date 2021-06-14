@@ -33,8 +33,8 @@ namespace Shelter
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "MessageBoard API",
-                    Description = "Message Board ASP.NET Core Web API",
+                    Title = "Animal Shelter API",
+                    Description = "Animal Shelter ASP.NET Core Web API",
                     TermsOfService = new Uri("https://homestarrunner.com")
                 });
             });
